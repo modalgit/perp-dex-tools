@@ -9,7 +9,8 @@ from typing import Optional
 
 # These imports are crucial for the bot to function correctly within the project
 from exchanges import ExchangeFactory
-from helpers.trading_logger import TradingLogger
+#from helpers.trading_logger import TradingLogger
+from helpers.logger import TradingLogger
 from helpers.lark_bot import LarkBot
 from helpers.telegram_bot import TelegramBot
 
