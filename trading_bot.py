@@ -52,7 +52,9 @@ class TradingBot:
 
         # 1. Create the logger
         self.logger = TradingLogger(
-            f"{self.config.exchange.upper()}_{self.config.ticker.upper()}"
+            exchange=self.config.exchange,
+            ticker=self.config.ticker            
+#            f"{self.config.exchange.upper()}_{self.config.ticker.upper()}"
         )
 
         # 2. Create the exchange client using the factory
